@@ -1,0 +1,57 @@
+body {
+  font-family: Helvetica, Arial, Sans-Serif;
+  max-width: 750px;
+  margin: auto;
+}
+
+#foot {
+	text-align: right;
+}
+
+h1 {
+  font-family: Helvetica, Arial, Sans-Serif;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #d3374a;
+  color: white;
+  font-size: 130%;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 150%;
+}
+
+input[type=text]:focus {
+  border-color: #d3374a;
+  outline: 0;
+}
+
+a {
+  color: #d3374a;
+}

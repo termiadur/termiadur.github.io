@@ -1,0 +1,87 @@
+\documentclass{article}
+\usepackage[landscape, margin=2cm, includefoot, footskip=-8pt]{geometry}
+\usepackage{booktabs}
+\usepackage{supertabular}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\fancypagestyle{ency}{
+\fancyhf{}
+\rhead{English - Welsh}
+\lhead{Termiadur Mathemateg}
+\rfoot{\thepage}
+}
+
+\fancypagestyle{cyen}{
+\fancyhf{}
+\rhead{Cymraeg - Saesneg}
+\lhead{Termiadur Mathemateg}
+\rfoot{\thepage}
+}
+
+\newcount\n
+\n=0
+\def\tablebody{}
+\makeatletter
+\loop\ifnum\n<100
+        \advance\n by1
+        \protected@edef\tablebody{\tablebody
+                \textbf{\number\n.}& shortText
+                \tabularnewline
+        }
+\repeat
+
+\makeatletter
+\let\mcnewpage=\newpage
+\newcommand{\TrickSupertabularIntoMulticols}{%
+  \renewcommand\newpage{%
+    \if@firstcolumn
+      \hrule width\linewidth height0pt
+      \columnbreak
+    \else
+      \mcnewpage
+    \fi
+  }%
+}
+\makeatother
+
+
+\begin{document}
+
+\pagestyle{ency}
+
+\section*{English - Welsh}
+
+\begin{multicols}{2}
+\TrickSupertabularIntoMulticols
+\small{
+\tablehead{%
+\hline
+\textbf{\textit{English}} & \textbf{\textit{Welsh}}\\
+\hline}
+\tabletail{\hline}
+\input{termau_ec.tex}
+}
+\end{multicols}
+
+\newpage
+
+\pagestyle{cyen}
+
+\section*{Cymraeg - Saesneg}
+
+\begin{multicols}{2}
+\TrickSupertabularIntoMulticols
+\small{
+\tablehead{%
+\hline
+\textbf{\textit{Cymraeg}} & \textbf{\textit{Saesneg}}\\
+\hline}
+\tabletail{\hline}
+\input{termau_ce.tex}
+}
+\end{multicols}
+
+\end{document}

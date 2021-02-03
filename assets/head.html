@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="assets/style.css">
+<html>
+<head>
+<script>
+function myFunction() {
+  const filter = document.querySelector('#myInput').value.toUpperCase();
+  const trs = document.querySelectorAll('#myTable tr:not(.header)');
+  trs.forEach(tr => tr.style.display = [...tr.children].find(td => td.innerHTML.toUpperCase().includes(filter)) ? '' : 'none');
+}
+</script>
+
+<title>Termau Mathemateg</title>
+</head>
+<body>
+
+<h1>Termiadur Ysgol Mathemateg Prifysgol Caerdydd</h1>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Chwiliwch am dermau...">
+
+<table id='myTable'>
+  <tr class="header">
+    <th>Cymraeg</th>
+    <th>Saesneg</th>
+  </tr>

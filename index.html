@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="assets/style.css">
+<html>
+<head>
+<script>
+function myFunction() {
+  const filter = document.querySelector('#myInput').value.toUpperCase();
+  const trs = document.querySelectorAll('#myTable tr:not(.header)');
+  trs.forEach(tr => tr.style.display = [...tr.children].find(td => td.innerHTML.toUpperCase().includes(filter)) ? '' : 'none');
+}
+</script>
+
+<title>Termau Mathemateg</title>
+</head>
+<body>
+
+<h1>Termiadur Ysgol Mathemateg Prifysgol Caerdydd</h1>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Chwiliwch am dermau...">
+
+<table id='myTable'>
+  <tr class="header">
+    <th>Cymraeg</th>
+    <th>Saesneg</th>
+  </tr>
+<tr>
+  <td>abel</td>
+  <td>abelian</td>
+</tr>
+<tr>
+  <td>adiad</td>
+  <td>addition</td>
+</tr>
+<tr>
+  <td>matrics cyfagosrwydd</td>
+  <td>adjacency matrix</td>
+</tr>
+<tr>
+  <td>atgyd</td>
+  <td>adjoint</td>
+</tr>
+<tr>
+  <td>atgydiol</td>
+  <td>adjugate</td>
+</tr>
+<tr>
+  <td>amgylchol</td>
+  <td>ambient</td>
+</tr>
+<tr>
+  <td>analytig</td>
+  <td>analytic</td>
+</tr>
+<tr>
+  <td>gwrthddeilliad</td>
+  <td>antiderivative</td>
+</tr>
+<tr>
+  <td>cyferbwynt</td>
+  <td>antipode</td>
+</tr>
+<tr>
+  <td>anwlws</td>
+  <td>anulus</td>
+</tr>
+<tr>
+  <td>brasamcanu</td>
+  <td>approximate</td>
+</tr>
+<tr>
+  <td>arg</td>
+  <td>argument</td>
+</tr>
+<tr>
+  <td>pwynt cynaniad</td>
+  <td>articulation point</td>
+</tr>
+<tr>
+  <td>cysylltiadol</td>
+  <td>associative</td>
+</tr>
+<tr>
+  <td>cysylltiadedd</td>
+  <td>associativity</td>
+</tr>
+<tr>
+  <td>matrics estynedig</td>
+  <td>augmented matrix</td>
+</tr>
+<tr>
+  <td>gwireb</td>
+  <td>axiom</td>
+</tr>
+<tr>
+  <td>gwrthgilio</td>
+  <td>backtracking</td>
+</tr>
+<tr>
+  <td>sail</td>
+  <td>basis</td>
+</tr>
+<tr>
+  <td>deusaethol</td>
+  <td>bijective</td>
+</tr>
+<tr>
+  <td>deulinol</td>
+  <td>bilinear</td>
+</tr>
+<tr>
+  <td>gweithrediad deuaidd</td>
+  <td>binary operation</td>
+</tr>
+<tr>
+  <td>deurannol</td>
+  <td>bipartite</td>
+</tr>
+<tr>
+  <td>hanerydd</td>
+  <td>bisect</td>
+</tr>
+<tr>
+  <td>arffin</td>
+  <td>bound</td>
+</tr>
+<tr>
+  <td>ffin</td>
+  <td>boundary</td>
+</tr>
+<tr>
+  <td>ffinedig uchod</td>
+  <td>bounded above</td>
+</tr>
+<tr>
+  <td>ffinedig isod</td>
+  <td>bounded below</td>
+</tr>
+<tr>
+  <td>cromfach</td>
+  <td>bracket</td>
+</tr>
+<tr>
+  <td>fforchio a chyfyngu</td>
+  <td>branch and bound</td>
+</tr>
+<tr>
+  <td>lled</td>
+  <td>breadth</td>
+</tr>
+<tr>
+  <td>datrysiad ymgais</td>
+  <td>candidate solution</td>
+</tr>
+<tr>
+  <td>prifoledd</td>
+  <td>cardinality</td>
+</tr>
+<tr>
+  <td>ffurf cartesaidd</td>
+  <td>cartesian form</td>
+</tr>
+<tr>
+  <td>problem y dyn bost tsieineaidd</td>
+  <td>chinese postman problem</td>
+</tr>
+<tr>
+  <td>amgylch</td>
+  <td>circumscribed circle</td>
+</tr>
+<tr>
+  <td>caeoldeb (?)</td>
+  <td>closedness</td>
+</tr>
+<tr>
+  <td>caefa</td>
+  <td>closure</td>
+</tr>
+<tr>
+  <td>ceugrwm</td>
+  <td>concave</td>
+</tr>
+<tr>
+  <td>cyfernod</td>
+  <td>coefficient</td>
+</tr>
+<tr>
+  <td>unllin</td>
+  <td>collinear</td>
+</tr>
+<tr>
+  <td>cyfuniadol</td>
+  <td>combinatorial</td>
+</tr>
+<tr>
+  <td>cyfiau cymhlyg</td>
+  <td>comlex conjugate</td>
+</tr>
+<tr>
+  <td>cymudol</td>
+  <td>commutative</td>
+</tr>
+<tr>
+  <td>cymudedd</td>
+  <td>commutativity</td>
+</tr>
+<tr>
+  <td>cyflenwad</td>
+  <td>complement</td>
+</tr>
+<tr>
+  <td>rhifau cymhlyg</td>
+  <td>complex numbers</td>
+</tr>
+<tr>
+  <td>cytgroes</td>
+  <td>concurrent</td>
+</tr>
+<tr>
+  <td>cyfathiant</td>
+  <td>congruency</td>
+</tr>
+<tr>
+  <td>cysylltiedig</td>
+  <td>connected</td>
+</tr>
+<tr>
+  <td>cysylltedd</td>
+  <td>connectivity</td>
+</tr>
+<tr>
+  <td>cadwrol</td>
+  <td>conservative</td>
+</tr>
+<tr>
+  <td>di-dor</td>
+  <td>continuous</td>
+</tr>
+<tr>
+  <td>differadwy yn ddi-dor</td>
+  <td>continuously differentiable</td>
+</tr>
+<tr>
+  <td>integryn amlin</td>
+  <td>contour integral</td>
+</tr>
+<tr>
+  <td>gwrthddywediad</td>
+  <td>contradiction</td>
+</tr>
+<tr>
+  <td>cydgyfeirio</td>
+  <td>converge</td>
+</tr>
+<tr>
+  <td>amgrwm</td>
+  <td>convex</td>
+</tr>
+<tr>
+  <td>cydbethyniad</td>
+  <td>correlation</td>
+</tr>
+<tr>
+  <td>ffwythiant dosraniad cronnus</td>
+  <td>cumulative distribution function</td>
+</tr>
+<tr>
+  <td>cylchred</td>
+  <td>circuit</td>
+</tr>
+<tr>
+  <td>cylchlwybr</td>
+  <td>cycle</td>
+</tr>
+<tr>
+  <td>silindrog</td>
+  <td>cylindrical</td>
+</tr>
+<tr>
+  <td>datbygio</td>
+  <td>debug</td>
+</tr>
+<tr>
+  <td>dull disgyniad</td>
+  <td>decent method</td>
+</tr>
+<tr>
+  <td>dadelfeniad</td>
+  <td>decomposition</td>
+</tr>
+<tr>
+  <td>dirywiedig</td>
+  <td>degenerate</td>
+</tr>
+<tr>
+  <td>gradd</td>
+  <td>degree</td>
+</tr>
+<tr>
+  <td>enwadur</td>
+  <td>denominator</td>
+</tr>
+<tr>
+  <td>dyfnder</td>
+  <td>depth</td>
+</tr>
+<tr>
+  <td>deilliad</td>
+  <td>derivative</td>
+</tr>
+<tr>
+  <td>croeslin</td>
+  <td>diagonal</td>
+</tr>
+<tr>
+  <td>croeslinedd</td>
+  <td>diagonalisability</td>
+</tr>
+<tr>
+  <td>croeslinadwy</td>
+  <td>diagonalisable</td>
+</tr>
+<tr>
+  <td>differadwyedd</td>
+  <td>differentiability</td>
+</tr>
+<tr>
+  <td>differadwy</td>
+  <td>differentiable</td>
+</tr>
+<tr>
+  <td>dimensiwn</td>
+  <td>dimention</td>
+</tr>
+<tr>
+  <td>graff cyfeiriedig</td>
+  <td>directed graph</td>
+</tr>
+<tr>
+  <td>deilliad cyfeiriadol</td>
+  <td>directional derivative</td>
+</tr>
+<tr>
+  <td>arwahanol</td>
+  <td>discrete</td>
+</tr>
+<tr>
+  <td>set digyswllt</td>
+  <td>disjoint set</td>
+</tr>
+<tr>
+  <td>dosbarthedd</td>
+  <td>distributivity</td>
+</tr>
+<tr>
+  <td>dargyfeirio</td>
+  <td>diverge</td>
+</tr>
+<tr>
+  <td>parth</td>
+  <td>domain</td>
+</tr>
+<tr>
+  <td>parth integru</td>
+  <td>domain of integration</td>
+</tr>
+<tr>
+  <td>graff ymyl-pwysedig</td>
+  <td>edge-weighted graph</td>
+</tr>
+<tr>
+  <td>elips</td>
+  <td>ellipse</td>
+</tr>
+<tr>
+  <td>endomorffedd</td>
+  <td>endomorphism</td>
+</tr>
+<tr>
+  <td>diweddbwynt</td>
+  <td>endpoint</td>
+</tr>
+<tr>
+  <td>cyfan</td>
+  <td>entire</td>
+</tr>
+<tr>
+  <td>hafaledd</td>
+  <td>equality</td>
+</tr>
+<tr>
+  <td>perthynas cywerthedd</td>
+  <td>equivalence relation</td>
+</tr>
+<tr>
+  <td>lemma amcangyfrif</td>
+  <td>estimation lemma</td>
+</tr>
+<tr>
+  <td>eithafion</td>
+  <td>extrema</td>
+</tr>
+<tr>
+  <td>ffactoriad</td>
+  <td>factorisation</td>
+</tr>
+<tr>
+  <td>dichonadwy</td>
+  <td>feasible</td>
+</tr>
+<tr>
+  <td>maes</td>
+  <td>field</td>
+</tr>
+<tr>
+  <td>meidraidd</td>
+  <td>finite</td>
+</tr>
+<tr>
+  <td>ffwythiant</td>
+  <td>function</td>
+</tr>
+<tr>
+  <td>theorem sylfaenol calcwlws</td>
+  <td>fundemental theorem of calculus</td>
+</tr>
+<tr>
+  <td>ffwythiant generadu</td>
+  <td>generating function</td>
+</tr>
+<tr>
+  <td>geodesig</td>
+  <td>geodesic</td>
+</tr>
+<tr>
+  <td>optimwm eang</td>
+  <td>global optimum</td>
+</tr>
+<tr>
+  <td>grŵp</td>
+  <td>group</td>
+</tr>
+<tr>
+  <td>dull hewristig</td>
+  <td>heuristic</td>
+</tr>
+<tr>
+  <td>holomorffig</td>
+  <td>holomorphic</td>
+</tr>
+<tr>
+  <td>homogenaidd</td>
+  <td>homogeneous</td>
+</tr>
+<tr>
+  <td>homomorffedd</td>
+  <td>homomorphism</td>
+</tr>
+<tr>
+  <td>unfathiant</td>
+  <td>identity</td>
+</tr>
+<tr>
+  <td>matrics unfathol</td>
+  <td>identity matrix</td>
+</tr>
+<tr>
+  <td>trawol</td>
+  <td>incident (graph theory)</td>
+</tr>
+<tr>
+  <td>mewnoliadau</td>
+  <td>indentation</td>
+</tr>
+<tr>
+  <td>hafaliad indecsol</td>
+  <td>indicial equation</td>
+</tr>
+<tr>
+  <td>gorfychan</td>
+  <td>infinitesimal</td>
+</tr>
+<tr>
+  <td>mewnsaethol</td>
+  <td>injective</td>
+</tr>
+<tr>
+  <td>lluoswm mewnol</td>
+  <td>inner product</td>
+</tr>
+<tr>
+  <td>mewngylch</td>
+  <td>inscribed circle</td>
+</tr>
+<tr>
+  <td>cyfanrif</td>
+  <td>integer</td>
+</tr>
+<tr>
+  <td>croestoriad</td>
+  <td>intersection</td>
+</tr>
+<tr>
+  <td>anhydrin</td>
+  <td>intractable</td>
+</tr>
+<tr>
+  <td>anhydrinedd</td>
+  <td>intractibility</td>
+</tr>
+<tr>
+  <td>gwrthdro</td>
+  <td>inverse</td>
+</tr>
+<tr>
+  <td>isometreg</td>
+  <td>isometry</td>
+</tr>
+<tr>
+  <td>isomorffig</td>
+  <td>isomorphic</td>
+</tr>
+<tr>
+  <td>cyd-ddosraniad</td>
+  <td>joint distribution</td>
+</tr>
+<tr>
+  <td>cnewyllyn</td>
+  <td>kernal</td>
+</tr>
+<tr>
+  <td>cwrtosis</td>
+  <td>kurtosis</td>
+</tr>
+<tr>
+  <td>hyd</td>
+  <td>length</td>
+</tr>
+<tr>
+  <td>terfan</td>
+  <td>limit</td>
+</tr>
+<tr>
+  <td>cyfuniad llinol</td>
+  <td>linear combination</td>
+</tr>
+<tr>
+  <td>dibyniaeth linol</td>
+  <td>linear dependence</td>
+</tr>
+<tr>
+  <td>annibyniaeth linol</td>
+  <td>linear independence</td>
+</tr>
+<tr>
+  <td>trawsffurfiant llinol</td>
+  <td>linear transformation</td>
+</tr>
+<tr>
+  <td>llinol ddibynnol</td>
+  <td>linearly dependent</td>
+</tr>
+<tr>
+  <td>llinol annibynnol</td>
+  <td>linearly independent</td>
+</tr>
+<tr>
+  <td>optimwm lleol</td>
+  <td>local optimum</td>
+</tr>
+<tr>
+  <td>logistaidd</td>
+  <td>logistc</td>
+</tr>
+<tr>
+  <td>dolen</td>
+  <td>loop (graph theory)</td>
+</tr>
+<tr>
+  <td>arffin isaf</td>
+  <td>lower bound</td>
+</tr>
+<tr>
+  <td>lŵn</td>
+  <td>lune</td>
+</tr>
+<tr>
+  <td>mapiad</td>
+  <td>mapping</td>
+</tr>
+<tr>
+  <td>ymylol</td>
+  <td>marginal</td>
+</tr>
+<tr>
+  <td>cydweddiad</td>
+  <td>matching</td>
+</tr>
+<tr>
+  <td>matrics</td>
+  <td>matrix</td>
+</tr>
+<tr>
+  <td>uchafbwynt</td>
+  <td>maximum</td>
+</tr>
+<tr>
+  <td>canolrif</td>
+  <td>median</td>
+</tr>
+<tr>
+  <td>llin canol</td>
+  <td>median (triangles)</td>
+</tr>
+<tr>
+  <td>meromorffig</td>
+  <td>meromorphic</td>
+</tr>
+<tr>
+  <td>gofod metrig</td>
+  <td>metric space</td>
+</tr>
+<tr>
+  <td>isafbwynt</td>
+  <td>minimum</td>
+</tr>
+<tr>
+  <td>lleddf</td>
+  <td>minor</td>
+</tr>
+<tr>
+  <td>monoton</td>
+  <td>monotone</td>
+</tr>
+<tr>
+  <td>aml-graff</td>
+  <td>multigraph</td>
+</tr>
+<tr>
+  <td>lluosogrwydd</td>
+  <td>multiplicity</td>
+</tr>
+<tr>
+  <td>lluosydd</td>
+  <td>multiplier</td>
+</tr>
+<tr>
+  <td>aml-set</td>
+  <td>multiset</td>
+</tr>
+<tr>
+  <td>cydanghynhwysol</td>
+  <td>mutually exclusive</td>
+</tr>
+<tr>
+  <td>annirywiedig</td>
+  <td>non-degenerate</td>
+</tr>
+<tr>
+  <td>anwag</td>
+  <td>non-empty</td>
+</tr>
+<tr>
+  <td>annistadl</td>
+  <td>non-trivial</td>
+</tr>
+<tr>
+  <td>n-cyfnodol</td>
+  <td>n-periodic</td>
+</tr>
+<tr>
+  <td>n-blyg</td>
+  <td>n-tuple</td>
+</tr>
+<tr>
+  <td>dirymiad</td>
+  <td>nullity</td>
+</tr>
+<tr>
+  <td>rhifiadur</td>
+  <td>numerator</td>
+</tr>
+<tr>
+  <td>ymchwil weithrediadol</td>
+  <td>operational research</td>
+</tr>
+<tr>
+  <td>gweithrediad</td>
+  <td>operation</td>
+</tr>
+<tr>
+  <td>gweithrediadau</td>
+  <td>operations</td>
+</tr>
+<tr>
+  <td>parau trefnedig</td>
+  <td>ordered pairs</td>
+</tr>
+<tr>
+  <td>tarddbwynt</td>
+  <td>origin</td>
+</tr>
+<tr>
+  <td>paramedriad</td>
+  <td>parameterisation</td>
+</tr>
+<tr>
+  <td>paramedreiddiwch</td>
+  <td>parameterise</td>
+</tr>
+<tr>
+  <td>deilliad rhannol</td>
+  <td>partial derivative</td>
+</tr>
+<tr>
+  <td>ymraniad</td>
+  <td>partition</td>
+</tr>
+<tr>
+  <td>llwybr</td>
+  <td>path</td>
+</tr>
+<tr>
+  <td>canradd</td>
+  <td>percentile</td>
+</tr>
+<tr>
+  <td>trynewidion</td>
+  <td>permutations</td>
+</tr>
+<tr>
+  <td>cromlin gwedd</td>
+  <td>phase curve</td>
+</tr>
+<tr>
+  <td>plân</td>
+  <td>plane</td>
+</tr>
+<tr>
+  <td>ffurf pegynlinol</td>
+  <td>polar form</td>
+</tr>
+<tr>
+  <td>pegwn</td>
+  <td>pole</td>
+</tr>
+<tr>
+  <td>trachywriedd</td>
+  <td>precision</td>
+</tr>
+<tr>
+  <td>rhif cysefin</td>
+  <td>prime number</td>
+</tr>
+<tr>
+  <td>penrhif</td>
+  <td>principal value</td>
+</tr>
+<tr>
+  <td>prif arg</td>
+  <td>principle argument</td>
+</tr>
+<tr>
+  <td>ffwythiant dwysedd tebygolrwydd</td>
+  <td>probability density function</td>
+</tr>
+<tr>
+  <td>ffwythiant màs tebygolrwydd</td>
+  <td>probability mass function</td>
+</tr>
+<tr>
+  <td>pedrant</td>
+  <td>quadrant</td>
+</tr>
+<tr>
+  <td>cwantel</td>
+  <td>quantile</td>
+</tr>
+<tr>
+  <td>chwartel</td>
+  <td>quartile</td>
+</tr>
+<tr>
+  <td>cyniferydd</td>
+  <td>quotient</td>
+</tr>
+<tr>
+  <td>radical</td>
+  <td>radical</td>
+</tr>
+<tr>
+  <td>hap-ddisgyniad</td>
+  <td>random decent</td>
+</tr>
+<tr>
+  <td>haprif</td>
+  <td>random number</td>
+</tr>
+<tr>
+  <td>amrediad</td>
+  <td>range</td>
+</tr>
+<tr>
+  <td>ranc</td>
+  <td>rank</td>
+</tr>
+<tr>
+  <td>rhifau cymarebol</td>
+  <td>rational numbers</td>
+</tr>
+<tr>
+  <td>rhifau real</td>
+  <td>real numbers</td>
+</tr>
+<tr>
+  <td>cilydd</td>
+  <td>reciprocal</td>
+</tr>
+<tr>
+  <td>perthynas ailadroddadwy</td>
+  <td>recurrance relation</td>
+</tr>
+<tr>
+  <td>dychweliadol</td>
+  <td>recursive</td>
+</tr>
+<tr>
+  <td>ffurf echelon rhes gostyngol</td>
+  <td>reduced row echelon form</td>
+</tr>
+<tr>
+  <td>ymatblyg</td>
+  <td>reflexive</td>
+</tr>
+<tr>
+  <td>ymatblygedd</td>
+  <td>reflexivity</td>
+</tr>
+<tr>
+  <td>gwaddod</td>
+  <td>residue</td>
+</tr>
+<tr>
+  <td>anhafaledd triongl gwrthwyneb</td>
+  <td>reverse triangle inequality</td>
+</tr>
+<tr>
+  <td>problem y dyn bost gwledig</td>
+  <td>rural postman problem</td>
+</tr>
+<tr>
+  <td>pwynt ffurfdro</td>
+  <td>saddle point</td>
+</tr>
+<tr>
+  <td>lluosiad sgalar</td>
+  <td>scalar multiplication</td>
+</tr>
+<tr>
+  <td>dilyniant</td>
+  <td>sequence</td>
+</tr>
+<tr>
+  <td>ehangiad cyfres</td>
+  <td>series expansion</td>
+</tr>
+<tr>
+  <td>sescwilinol</td>
+  <td>sesquilinear</td>
+</tr>
+<tr>
+  <td>set</td>
+  <td>set</td>
+</tr>
+<tr>
+  <td>rhanbarth cysylltiedig syml</td>
+  <td>simply connected region</td>
+</tr>
+<tr>
+  <td>ffug-anelio</td>
+  <td>simulated annealing</td>
+</tr>
+<tr>
+  <td>hynodyn</td>
+  <td>singularity</td>
+</tr>
+<tr>
+  <td>suddfan</td>
+  <td>sink (graph theory)</td>
+</tr>
+<tr>
+  <td>sgiwedd</td>
+  <td>skewness</td>
+</tr>
+<tr>
+  <td>sgiw-gymesur</td>
+  <td>skew-symmetric</td>
+</tr>
+<tr>
+  <td>gofod datrysiadau</td>
+  <td>solution space</td>
+</tr>
+<tr>
+  <td>tarddle</td>
+  <td>source (graph theory)</td>
+</tr>
+<tr>
+  <td>rhychwant</td>
+  <td>span</td>
+</tr>
+<tr>
+  <td>rhychwantu</td>
+  <td>spanning</td>
+</tr>
+<tr>
+  <td>coeden rhychwantu</td>
+  <td>spanning tree</td>
+</tr>
+<tr>
+  <td>gwasgarog</td>
+  <td>sparse</td>
+</tr>
+<tr>
+  <td>canol serennol</td>
+  <td>star centre</td>
+</tr>
+<tr>
+  <td>rhanbarth seren oleuol</td>
+  <td>starlit region</td>
+</tr>
+<tr>
+  <td>pwynt arhosol</td>
+  <td>stationary point</td>
+</tr>
+<tr>
+  <td>egwyddor gref anwythiad</td>
+  <td>strong principle of induction</td>
+</tr>
+<tr>
+  <td>is-grŵp</td>
+  <td>subgroup</td>
+</tr>
+<tr>
+  <td>is-set</td>
+  <td>subset</td>
+</tr>
+<tr>
+  <td>is-ofod</td>
+  <td>subspace</td>
+</tr>
+<tr>
+  <td>tynnau</td>
+  <td>subtraction</td>
+</tr>
+<tr>
+  <td>arwyneb</td>
+  <td>surface</td>
+</tr>
+<tr>
+  <td>arsaethol</td>
+  <td>surjective</td>
+</tr>
+<tr>
+  <td>matrics cymesur</td>
+  <td>symmetric matrix</td>
+</tr>
+<tr>
+  <td>chwiliad tabŵ</td>
+  <td>tabu search</td>
+</tr>
+<tr>
+  <td>tangiad</td>
+  <td>tangent</td>
+</tr>
+<tr>
+  <td>olin</td>
+  <td>trace</td>
+</tr>
+<tr>
+  <td>trosgynnol</td>
+  <td>transcendental</td>
+</tr>
+<tr>
+  <td>trawsffurf</td>
+  <td>transform</td>
+</tr>
+<tr>
+  <td>transitifiaeth</td>
+  <td>transitivity</td>
+</tr>
+<tr>
+  <td>trawsddodiad</td>
+  <td>transposition</td>
+</tr>
+<tr>
+  <td>trawsddodyn</td>
+  <td>transpose</td>
+</tr>
+<tr>
+  <td>anhafaledd triongl</td>
+  <td>triangle inequality</td>
+</tr>
+<tr>
+  <td>triongliant</td>
+  <td>triangulation</td>
+</tr>
+<tr>
+  <td>trobwynt</td>
+  <td>turning point</td>
+</tr>
+<tr>
+  <td>diarffin</td>
+  <td>unbounded</td>
+</tr>
+<tr>
+  <td>unigryw</td>
+  <td>unique</td>
+</tr>
+<tr>
+  <td>uniad</td>
+  <td>union</td>
+</tr>
+<tr>
+  <td>set gynhwysol</td>
+  <td>universal set</td>
+</tr>
+<tr>
+  <td>arffin uchaf</td>
+  <td>upper bound</td>
+</tr>
+<tr>
+  <td>trionglog uchaf</td>
+  <td>upper triangular</td>
+</tr>
+<tr>
+  <td>newidyn</td>
+  <td>variable</td>
+</tr>
+<tr>
+  <td>fector</td>
+  <td>vector</td>
+</tr>
+<tr>
+  <td>gofod fector</td>
+  <td>vector space</td>
+</tr>
+<tr>
+  <td>clir-ddiffiniedig</td>
+  <td>well defined</td>
+</tr>
+<tr>
+  <td>sero</td>
+  <td>zero</td>
+</tr>
+</table>
+
+<p id='foot'>(<a href='assets/tex/termiadur.pdf'>Lawrlwytho'r pdf</a>) Diweddariad diwethaf ar 3 Chwefror 2021.</p>
+
+</body>
+</html>
